@@ -31,9 +31,9 @@ fun RecipeScreen(modifier: Modifier = Modifier,
                  ){
     Box(modifier = Modifier.fillMaxSize()){
         when{
-//            viewstate.loading->{
-//                CircularProgressIndicator(modifier.align(Alignment.Center))
-//            }
+            viewstate.loading->{
+                CircularProgressIndicator(progress = 0.89f, modifier.align(Alignment.Center))
+            }
             viewstate.error != null->{
                 Text(text = "ERROR OCCURRED")
             }
